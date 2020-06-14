@@ -1,0 +1,4 @@
+name: DiscordPlugin
+version: 1.0.0
+main: de.amrik.mctalky.DiscordPlugin
+
