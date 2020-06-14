@@ -36,13 +36,13 @@ public class ChatListener implements Listener{
 		@EventHandler(priority = EventPriority.HIGH)
 		public void onPlayerJoin(PlayerJoinEvent e){
 				String p = e.getPlayer().getDisplayName();
-				client.send(p +" Has joined the minecraft server!");
+				client.send("**"+p +"** Has joined the minecraft server!");
 		}
 
 		@EventHandler(priority = EventPriority.HIGH)
 		public void onPlayerQuit(PlayerQuitEvent e){
 				String p = e.getPlayer().getDisplayName();
-				client.send(p+" Has left the minecraft server!");
+				client.send("**"+p+"** Has left the minecraft server!");
 		}
 
 
@@ -51,6 +51,6 @@ public class ChatListener implements Listener{
 				String msg;
 				
 				msg = e.getMessage();
-				client.send(p+": "+msg);
+				client.send("**"+p+"**: "+msg);
 		}
 }
