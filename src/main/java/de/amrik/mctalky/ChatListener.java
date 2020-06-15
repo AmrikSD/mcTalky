@@ -17,12 +17,17 @@ import club.minnced.discord.webhook.WebhookClientBuilder;
 
 public class ChatListener implements Listener{
 		
-		final String URL = "https://discordapp.com/api/webhooks/721823380223033446/ZxNPA6z34uvllz2_I50agFGy5NG7WAuaTYEdhRChcTVW5dS1qHxXNNyG-tcfc35MNzUW";
+		private String URL;
 	
-		WebhookClientBuilder builder = new WebhookClientBuilder(URL); // or id, token
-		WebhookClient client = builder.build();
+		private WebhookClientBuilder builder;
+		private WebhookClient client;
 		
-		
+		ChatListener(String URL){
+				this.URL = URL;
+				this.builder = new WebhookClientBuilder(this.URL);
+				this.client = builder.build();
+		}
+
 		/*@EventHandler(priority = EventPriority.HIGH)
 		public void asyncChatEvent(AsyncPlayerChatEvent e) {
 				sendDiscordMessage(e);

@@ -20,7 +20,7 @@
             <configuration>
               <transformers>
                 <transformer>
-                  <mainClass>de.amrik.mctalky.DiscordPlugin</mainClass>
+                  <mainClass>de.amrik.mctalky.McTalky</mainClass>
                 </transformer>
               </transformers>
             </configuration>

@@ -1,4 +1,4 @@
-name: DiscordPlugin
+name: McTalky 
 version: 1.0.0
-main: de.amrik.mctalky.DiscordPlugin
+main: de.amrik.mctalky.McTalky
 
